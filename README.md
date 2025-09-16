@@ -26,7 +26,7 @@ DSI2598+連接水位感測器、LED和蜂鳴器，利用DSI2598+開發板回傳�
 1.至此網址下載壓縮包並解壓縮做驅動
 https://github.com/rogerclarkmelbourne/Arduino_STM32
 
-2. 點選檔案→偏好設定→額外的開發版管理員網址貼上：https://dan.drown.org/stm32duino/package_STM32duino_index.json
+2.點選檔案→偏好設定→額外的開發版管理員網址貼上：https://dan.drown.org/stm32duino/package_STM32duino_index.json
 
 <img width="788" height="481" alt="image (11)" src="https://github.com/user-attachments/assets/8c146842-173e-4ea9-8b63-9c3171267f8d" />
 
@@ -74,7 +74,7 @@ ideaschain水位折線圖
 下圖為嘗試從ideaschain傳輸控制指令到DSI2598+，MQTT explorer有接收到指令但並未成功控制DSI2598+
 <img width="654" height="268" alt="image (18)" src="https://github.com/user-attachments/assets/61ea8f14-038d-4741-b4d7-6f9158e52024" />
 
-**DEMO錄影檔youtube網址：https://youtu.be/o_1v6JTHu6Q **
+**DEMO錄影檔youtube網址：** https://youtu.be/o_1v6JTHu6Q 
 
 **心得：**
 
