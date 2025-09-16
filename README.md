@@ -98,6 +98,6 @@ https://iforum.ideaschain.com.tw/iforum/techmatch/solution.do?solution=19
 
 https://www.youtube.com/watch?v=8Eu0hU2vq48
 
-**程式碼 :**
+**程式碼(註記) :**
 
 程式碼為測試雙向控制的版本，但因最後測試失敗，如果只想使用水位控制的話，一樣能正常運作，只是會多一些無關的程式碼。
