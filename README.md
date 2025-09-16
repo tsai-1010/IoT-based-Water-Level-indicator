@@ -10,8 +10,7 @@
 功能：量測水位高度，並且同時回傳ideachain網站以及Node-Red，若水位太高則亮紅燈並發出警示
 
 **系統方塊圖：**
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0baf11fe-eabf-45ad-9d77-4c230271bdab/4bd961c5-3716-4fd3-96cb-1bb66fd54b6b/image.png)
+<img width="1253" height="699" alt="image (10)" src="https://github.com/user-attachments/assets/9c5f15c3-48e0-46f6-bf7f-06e416f6c327" />
 
 **技術使用：**DSI2598+連接水位感測器、LED和蜂鳴器，利用DSI2598+開發板回傳水位資訊，若高水位則響蜂鳴器以提供警示；因為DSI2598+無法同時連接兩個MQTT伺服器，所以上傳部分使用序列化連接，一次只連接一個，上傳完數據後斷開連線，改連接另一個伺服器，依此類推。
 
@@ -28,7 +27,7 @@ https://github.com/rogerclarkmelbourne/Arduino_STM32
 
 2. 點選檔案→偏好設定→額外的開發版管理員網址貼上：https://dan.drown.org/stm32duino/package_STM32duino_index.json
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0baf11fe-eabf-45ad-9d77-4c230271bdab/c310909c-266f-4c83-8b49-6c84f49ef14e/image.png)
+<img width="788" height="481" alt="image (11)" src="https://github.com/user-attachments/assets/8c146842-173e-4ea9-8b63-9c3171267f8d" />
 
 3.點選工具 →開發板 → 開發板管理員→安裝STM32F1xx/GD32F1xx boards
 
@@ -36,7 +35,7 @@ https://github.com/rogerclarkmelbourne/Arduino_STM32
 
 草稿碼 —> 匯入程式庫 —>  管理程式庫
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0baf11fe-eabf-45ad-9d77-4c230271bdab/f6cb2edc-0070-49d9-824c-b6396ed6a3dc/image.png)
+<img width="642" height="360" alt="image (12)" src="https://github.com/user-attachments/assets/70a1a593-7904-43c1-9754-f44c403c4911" />
 
 5.開啟 Arduino寫入以下2個程式：
 
@@ -46,7 +45,7 @@ https://github.com/rogerclarkmelbourne/Arduino_STM32
 
 7.做內網穿透(frps配置)再透過ubuntu連接接MQTT
 
-![Screenshot From 2025-01-08 18-35-31.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0baf11fe-eabf-45ad-9d77-4c230271bdab/e00c0a8c-a2db-4b41-b087-c966f662d9cf/Screenshot_From_2025-01-08_18-35-31.png)
+<img width="563" height="541" alt="Screenshot From 2025-01-08 18-35-31" src="https://github.com/user-attachments/assets/facd5bf7-248d-4682-9fad-de69df15d3fe" />
 
 8.把測量的數據回傳至ideaschain及quiz.us.kg，ideaschain上可以顯示出水位高度圖表，quiz.us.kg會搭配Node-Red顯示圖表
 
@@ -57,28 +56,22 @@ https://github.com/rogerclarkmelbourne/Arduino_STM32
 **實體照片、執行畫面：**
 
 此為DSI2598+上傳至MQTT(quiz.us.kg)的畫面
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0baf11fe-eabf-45ad-9d77-4c230271bdab/7924e52b-657e-4ccf-9055-826481f74f88/image.png)
+<img width="953" height="1005" alt="image (14)" src="https://github.com/user-attachments/assets/663c0db1-a4d0-4249-89f6-f1eed33de7f0" />
 
 下圖為Node-Red收到數據後顯示圖表的畫面
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0baf11fe-eabf-45ad-9d77-4c230271bdab/4218ad5f-b7b1-4db0-b207-ff6eab8ea12b/image.png)
+<img width="1920" height="990" alt="image (15)" src="https://github.com/user-attachments/assets/a973fc70-a83a-4058-a4fc-6d54c88e0adf" />
 
 下圖為監控視窗畫面
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0baf11fe-eabf-45ad-9d77-4c230271bdab/128988b8-888e-4f7c-9f34-7746b2b9b89d/image.png)
+<img width="1375" height="889" alt="image (16)" src="https://github.com/user-attachments/assets/c2e9e160-0cd7-44ee-bd2f-e9d85613a00a" />
 
 ideaschain水位折線圖
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0baf11fe-eabf-45ad-9d77-4c230271bdab/4dee889e-8e63-4cdb-ac3a-c20a89a8a1c6/image.png)
+<img width="1918" height="878" alt="image (17)" src="https://github.com/user-attachments/assets/6f2eab23-f50b-4cb4-a3e5-d715688558e9" />
 
 下圖為實體照
-
-![ec787656-b78a-41cb-b3aa-4d9a0ea84047.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/0baf11fe-eabf-45ad-9d77-4c230271bdab/0065d453-753e-4b56-a8a3-cec4e9f6d1a2/ec787656-b78a-41cb-b3aa-4d9a0ea84047.jpg)
+![ec787656-b78a-41cb-b3aa-4d9a0ea84047](https://github.com/user-attachments/assets/1c00d877-5ddd-4ac0-89e8-c4e66ad20306)
 
 下圖為嘗試從ideaschain傳輸控制指令到DSI2598+，MQTT explorer有接收到指令但並未成功控制DSI2598+
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0baf11fe-eabf-45ad-9d77-4c230271bdab/2d76ae7c-fa7e-49b5-916e-1fdb29f23e8c/image.png)
+<img width="654" height="268" alt="image (18)" src="https://github.com/user-attachments/assets/61ea8f14-038d-4741-b4d7-6f9158e52024" />
 
 **DEMO錄影檔youtube網址：**https://youtu.be/o_1v6JTHu6Q
 
