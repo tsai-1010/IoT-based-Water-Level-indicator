@@ -1,4 +1,4 @@
-# -# 智慧物聯網概論與應用
+#  智慧物聯網概論與應用
 
 | 學期 | 113學年度第1學期 | 授課教師 | 李棟村 |
 | --- | --- | --- | --- |
@@ -12,7 +12,8 @@
 **系統方塊圖：**
 <img width="1253" height="699" alt="image (10)" src="https://github.com/user-attachments/assets/9c5f15c3-48e0-46f6-bf7f-06e416f6c327" />
 
-**技術使用：**DSI2598+連接水位感測器、LED和蜂鳴器，利用DSI2598+開發板回傳水位資訊，若高水位則響蜂鳴器以提供警示；因為DSI2598+無法同時連接兩個MQTT伺服器，所以上傳部分使用序列化連接，一次只連接一個，上傳完數據後斷開連線，改連接另一個伺服器，依此類推。
+**技術使用：**
+DSI2598+連接水位感測器、LED和蜂鳴器，利用DSI2598+開發板回傳水位資訊，若高水位則響蜂鳴器以提供警示；因為DSI2598+無法同時連接兩個MQTT伺服器，所以上傳部分使用序列化連接，一次只連接一個，上傳完數據後斷開連線，改連接另一個伺服器，依此類推。
 
 **軟硬體設計：**
 
@@ -51,7 +52,7 @@ https://github.com/rogerclarkmelbourne/Arduino_STM32
 
 9.雙向平台互動，當蜂鳴器響時，利用MQTT 伺服器發布和訂閱控制蜂鳴器開關(測試失敗)
 
-   原因：雙向互動根據我們的投入，一定是需要加上控制的code在BC26的文件中的，但參考idealchain官網、google及youtube，皆沒有看到有反向透過idealchains去操控DSI2598+的案例。
+原因：雙向互動根據我們的投入，一定是需要加上控制的code在BC26的文件中的，但參考idealchain官網、google及youtube，皆沒有看到有反向透過idealchains去操控DSI2598+的案例。
 
 **實體照片、執行畫面：**
 
@@ -73,7 +74,7 @@ ideaschain水位折線圖
 下圖為嘗試從ideaschain傳輸控制指令到DSI2598+，MQTT explorer有接收到指令但並未成功控制DSI2598+
 <img width="654" height="268" alt="image (18)" src="https://github.com/user-attachments/assets/61ea8f14-038d-4741-b4d7-6f9158e52024" />
 
-**DEMO錄影檔youtube網址：**https://youtu.be/o_1v6JTHu6Q
+**DEMO錄影檔youtube網址：https://youtu.be/o_1v6JTHu6Q **
 
 **心得：**
 
