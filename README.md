@@ -7,7 +7,7 @@
 
 **專題題目：水位感測**
 
-功能：量測水位高度，並且同時回傳ideachain網站以及Node-Red，若水位太高則亮紅燈並發出警示
+功能：量測水位高度，並且同時回傳IDEAS Chain網站以及Node-Red，若水位太高則亮紅燈並發出警示
 
 **系統方塊圖：**
 <img width="1253" height="699" alt="image (10)" src="https://github.com/user-attachments/assets/9c5f15c3-48e0-46f6-bf7f-06e416f6c327" />
@@ -52,7 +52,7 @@ https://github.com/rogerclarkmelbourne/Arduino_STM32
 
 9.雙向平台互動，當蜂鳴器響時，利用MQTT 伺服器發布和訂閱控制蜂鳴器開關(測試失敗)
 
-原因：雙向互動根據我們的投入，一定是需要加上控制的code在BC26的文件中的，但參考idealchain官網、google及youtube，皆沒有看到有反向透過idealchains去操控DSI2598+的案例。
+原因：雙向互動根據我們的投入，一定是需要加上控制的code在BC26的文件中的，但參考IDEAS Chain官網、google及youtube，皆沒有看到有反向透過IDEAS Chain去操控DSI2598+的案例。
 
 **實體照片、執行畫面：**
 
